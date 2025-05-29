@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="bookmark" href="favicon.ico" />
     <title>5AMClub Press Release – May 29 2025</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32" />
+
     <style>
+      :root {
+        --banner-width: 61.8%; /* golden‑ratio width */
+      }
       body {
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -15,11 +20,17 @@
         color: #333;
         background: #fafafa;
       }
-      /* Banner */
+      /* Banner wrapper */
+      header {
+        background: #000; /* black fill around the image */
+        padding: 32px 0; /* some breathing space above & below */
+        display: flex;
+        justify-content: center;
+      }
       .banner {
-        width: 100%;
-        max-height: 980px; /* limit the visible height */
-        object-fit: cover; /* keep center crop if taller than 380px */
+        width: var(--banner-width);
+        max-width: 100%;
+        height: auto; /* keep original proportions */
         display: block;
       }
       /* Content container */
@@ -54,9 +65,12 @@
       .footer a:hover {
         text-decoration: underline;
       }
-      @media (max-width: 400px) {
+      @media (max-width: 600px) {
         h1 {
           font-size: 1.4rem;
+        }
+        :root {
+          --banner-width: 90%; /* nearly full width on small screens */
         }
         .container {
           margin: 20px 10px 40px;
@@ -67,7 +81,7 @@
   <body>
     <!-- Hero Banner -->
     <header>
-      <!-- Place the image file in the same directory as this HTML file -->
+      <!-- Ensure the image file sits alongside this HTML or adjust the path -->
       <img
         src="A_Twitter_announcement_graphic_for_the_5AMClub_dis.png"
         alt="5AMClub Announcement Graphic"
