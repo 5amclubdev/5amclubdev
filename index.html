@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5AMClub Press Release – May 29 2025</title>
+    <title>5AMClub Press Release – May 29 2025</title>
     <style>
       body {
         margin: 0;
@@ -16,13 +16,14 @@
       /* Banner */
       .banner {
         width: 100%;
-        height: auto;
+        max-height: 380px; /* limit the visible height */
+        object-fit: cover; /* keep center crop if taller than 380px */
         display: block;
       }
       /* Content container */
       .container {
         max-width: 800px;
-        margin: 40px auto;
+        margin: 32px auto 56px;
         padding: 0 20px;
         background: #fff;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -36,12 +37,27 @@
       p {
         margin-bottom: 1rem;
       }
+      /* Footer */
+      .footer {
+        background: #111;
+        color: #eee;
+        font-size: 0.875rem;
+        text-align: center;
+        padding: 1.5rem 20px;
+      }
+      .footer a {
+        color: #ff7c33; /* subtle orange tint for links */
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
       @media (max-width: 600px) {
         h1 {
           font-size: 1.4rem;
         }
         .container {
-          margin: 20px 10px;
+          margin: 20px 10px 40px;
         }
       }
     </style>
@@ -60,8 +76,22 @@
     <!-- Press Release Content -->
     <main class="container">
       <h1>5AMClub Announces Strategic Bitcoin Reserve &amp; AI Venture Fund</h1>
-      <p><strong>TAIPEI, May 29 2025 –</strong> At a global press conference held at 9:30 p.m., 5AMClub announced the creation of a <em>Strategic Bitcoin Reserve</em> and the launch of a dedicated <em>AI Venture Fund</em>. These twin pillars reinforce its mission to cultivate collective growth within its worldwide community, champion decentralization, and accelerate frontier innovation.</p>
-      <p>The reserve secures long‑term treasury assets in sound digital money, while the fund will seed early‑stage AI projects that share 5AMClub’s “build‑before‑dawn” ethos.</p>
+      <p><strong>TAIPEI, May 29 2025 –</strong> At a global press conference held at 9:30 p.m., 5AMClub announced the creation of a <em>Strategic Bitcoin Reserve</em> and the launch of a dedicated <em>AI Venture Fund</em>. These twin pillars reinforce its mission to cultivate collective growth within its worldwide community, champion decentralization, and accelerate frontier innovation.</p>
+      <p>The reserve secures long-term treasury assets in sound digital money, while the fund will seed early-stage AI projects that share 5AMClub’s “build-before-dawn” ethos.</p>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 5AMClub. All rights reserved.</p>
+      <p>
+        Contact: <a href="mailto:press@5amclub.xyz">press@5amclub.xyz</a> ·
+        Follow us on
+        <a href="https://twitter.com/5amclub" target="_blank" rel="noopener">Twitter/X</a>
+      </p>
+      <p>
+        5AMClub – Empowering collective growth, decentralization &amp; innovation
+        worldwide.
+      </p>
+    </footer>
   </body>
 </html>
